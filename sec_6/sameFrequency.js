@@ -37,4 +37,4 @@ function sameFrequency(num1, num2){
     // good luck. Add any arguments you deem necessary.
   }
 
-console.log(sameFrequency(12132,17808932))
+console.log(sameFrequency(12132,178032))
