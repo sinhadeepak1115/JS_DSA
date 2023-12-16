@@ -1,9 +1,6 @@
-function reverse(word){
-  let arr = word.split("");
-  arr = arr.reverse().join("");
-  
-
-  return arr;
+function reverse(str){
+  if(str.length <= 1) return str;
+	  return reverse(str.slice(1)) + str[0];  
 }
 
 console.log(reverse('awesome')) // 'emosewa'
