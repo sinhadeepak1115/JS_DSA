@@ -8,7 +8,7 @@ function capitalizeFirst (arr) {
       return [arr[0].toUpperCase()];
     }
     let res = capitalizeFirst(arr.slice(0,-1));
-    res.push(arr.slice(arr.slice(array.length-1)[0].toUpperCase()));
+    res.push(arr.slice(array.length-1)[0].toUpperCase());
     return res;
 
 }
