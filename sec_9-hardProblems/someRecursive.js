@@ -6,9 +6,16 @@
 // someRecursive([4,6,8], isOdd) // false
 // someRecursive([4,6,8], val => val > 10); // false
 
-function someRecursive(){
-  if (array.length === 0) return false;
-  if (callback(array[0])) return true;
-   return someRecursive(array.slice(1),callback);
+function someRecursive(arr, callback){
+  if (arr.length ==0){
+    return false ;
+  }if(callback(arr[0])){
+    return true;
+  }else{
+    return false;
+  }
 }
+const isOdd = val => val%2 !== 0;
+const isEven = val => val%2 === 0;
 
+console.log(someRecursive([1,2,3,4], isOdd))
